@@ -222,8 +222,20 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <!-- nav active -->
+    <script src="stickUp.min.js"></script>
+
     <script type="text/javascript">
+      //initiating jQuery
+      jQuery(function($) {
+        $(document).ready( function() {
+          //enabling stickUp on the '.navbar-wrapper' class
+          $('.navbar').stickUp();
+        });
+      });
+    </script>
+
+    <!-- nav active -->
+    <!-- <script type="text/javascript">
       $(document).ready(function () { 
         $('ul.nav > li').click(function (e) {
           e.preventDefault();
@@ -231,6 +243,6 @@
           $(this).addClass('active');
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
