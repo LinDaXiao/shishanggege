@@ -14,6 +14,35 @@
     <!-- Bootstrap core CSS -->
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
+    <style type="text/css">
+      /* Special class on .container surrounding .navbar, used for positioning it into place. */
+      .navbar-wrapper {
+        margin-top:20px;
+        position: relative;
+        z-index: 15;      
+      }     
+
+      .navbar.navbar-inverse.navbar-static-top {
+        background: #5cb85c;
+        border-color: #398439;
+      }
+      .navbar.navbar-inverse.navbar-static-top a{
+        color:#fff;
+      }
+      .navbar.navbar-inverse.navbar-static-top a:hover{
+        color:#0A64A4;
+      }
+      .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus{
+        background:#398439;
+        font-weight:700;
+      }
+      .navbar-inverse .navbar-nav>.active>a:hover {
+        background:#398439;
+        color:#fff;
+        font-weight:700;
+      }
+    </style>
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
