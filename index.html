@@ -46,7 +46,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>
+            <li class="active"><a href="#myCarousel">首页</a></li>
             <li><a href="#sales">限时特卖</a></li>
             <li><a href="#hots">火热商品</a></li>
             <li><a href="#snacks">休闲零嘴</a></li>
@@ -229,7 +229,14 @@
       jQuery(function($) {
         $(document).ready( function() {
           //enabling stickUp on the '.navbar-wrapper' class
-          $('nav').stickUp();
+          $('nav').stickUp({
+            parts:{
+              0:'myCarousel',
+              1:'sales'
+            },
+            itemClass:'menuItem',
+            itemHover:'active'
+          });
         });
       });
     </script>
