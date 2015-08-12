@@ -222,5 +222,15 @@
     <script src="../../assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- nav active -->
+    <script type="text/javascript">
+      $(document).ready(function () { 
+        $('ul.nav > li').click(function (e) {
+          e.preventDefault();
+          $('ul.nav > li').removeClass('active');
+          $(this).addClass('active');
+        });
+      });
+    </script>
   </body>
 </html>
